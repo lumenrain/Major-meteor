@@ -1,0 +1,8 @@
+.main-background{
+    background-image: linear-gradient(to top, #5FC3E4, #14162d);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 1000px;
+    opacity: 0.4;
+}

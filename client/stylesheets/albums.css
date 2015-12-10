@@ -1,0 +1,32 @@
+.album_header {
+  text-align: center;
+}
+
+.thumb {
+  margin-bottom: 50px;
+}
+
+span.glyphicon-forward {
+    font-size: 1.7em;
+    vertical-align: middle;
+}
+
+span.glyphicon-heart {
+    font-size: 1.7em;
+    vertical-align: middle;
+}
+
+small.likes_number {
+  font-size: 1.7em;
+  vertical-align: middle;
+}
+
+.full_image {
+  width: 500px;
+  height: 500px;
+}
+
+.add_album_container {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}

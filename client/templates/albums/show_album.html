@@ -1,0 +1,19 @@
+<template name="show_album">
+  <div class="container container_padding">
+    <div class="row">
+      <div class="col-md-8">
+        {{#with FS.GetFile "albumsImages" image}}
+          <img class="img-responsive full_image" src="{{url}}"/>
+        {{/with}}
+      </div>
+      <div class="col-md-4" >
+        <ul class="list-group">
+            <h3>Songs</h3>
+            {{#each songs}}
+                <li class="list-group-item">{{name}} - {{artist}}</li>
+            {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</template>

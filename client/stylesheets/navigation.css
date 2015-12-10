@@ -1,0 +1,38 @@
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans);
+
+.navbar-inner {
+  background: url("/images/meteor_bg.jpg") repeat-x;
+}
+
+.navbar {
+padding-bottom: 0px;
+}
+
+.navbar_custom a {
+  color: white;
+  font-family: 'Droid Sans', sans-serif;
+}
+
+.navbar a:active {
+  color: white !important;
+}
+
+ul.nav_custom a:hover {
+  color: #161545 !important;
+}
+
+ul.nav_custom a:focus {
+  color: #161545 !important;
+}
+
+ul.nav_custom a {
+  color: white !important;
+}
+
+ul.nav a:hover {
+  color: #161545 !important;
+}
+
+ul.nav a:focus {
+  color: #161545 !important;
+}

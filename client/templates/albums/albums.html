@@ -1,0 +1,42 @@
+<template name="albums">
+    <!-- <div class="container">
+      {{#each showAlbums}}
+        <div class="col-md-4">
+          <div class="panel panel-default mb">
+            <div class="panel-image">
+              <img src="{{images.url storage='albumsImages'}}" class="panel-image-preview"/>
+
+            </div>
+            <div class="panel-body">
+              <h4>{{name}}</h4>
+              {{description}}
+            </div>
+            <div class="panel-footer text-center" >
+              <a href="{{pathFor 'show_album'}}" data-toggle="tooltip" title="Open It"><span class="glyphicon glyphicon-open-file"></span></a>
+            </div>
+          </div>
+        </div>
+      {{/each}}
+    </div> -->
+
+    <div class="container">
+
+       <div class="row">
+
+           <div class="col-lg-12">
+               <h1 class="page-header">Thumbnail Gallery</h1>
+           </div>
+           {{#each showAlbums}}
+           <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+               <a class="thumbnail" href="{{pathFor 'show_album'}}">
+                   <img class="img-responsive" src="{{images.url storage='albumsImages'}}" alt="">
+               </a>
+               <h5 class="album_header">{{artist}} - {{name}}</h5>
+               <a href="#" title="Like it" data-action="addLikes"><span class=" glyphicon glyphicon-heart"></span><small class="likes_number"> {{likes}}</small></a>
+               <a href="{{pathFor 'show_album'}}" title="Open"><span class="glyphicon glyphicon-forward pull-right"></span></a>
+           </div>
+           {{/each}}
+       </div>
+     </div>
+
+</template>
